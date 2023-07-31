@@ -1,0 +1,11 @@
+.body-content__rollig-text {
+  white-space: nowrap;
+  font-family: 'Playfair Display', serif;
+  margin-top: .1vw;
+}
+
+.body-content__rollig-text .rolling-text__text {
+  font-size: 4vw;
+  display: inline-block;
+}
+/*# sourceMappingURL=style.css.map */

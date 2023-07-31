@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.scss">
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+        <style>
+            section{
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="body-content__rollig-text rolling-text" data-reveal>
+                <div class="rolling-text__text">
+                  Lorem Ipsum is simply dummy text of the printing.  
+                </div>
+              </div>
+              </section>
+    <script>
+        let $text = $(' .rolling-text__text');
+let $wrap = $('.rolling-text');
+
+$text.clone().appendTo($wrap);
+
+TweenMax.to($wrap, 20, {
+  x: -($text.width()),
+  ease: Linear.easeNone,
+  repeat: -1,
+});    
+    </script>
+    </body>
+</html>
